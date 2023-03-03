@@ -1,0 +1,172 @@
+.HomePage{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position:relative;
+}
+.UpperSection{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.UpperSection li{
+    list-style: none;
+    padding-right: 20px;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.UpperSection li:hover{
+ text-decoration: underline;
+}
+
+.UpperSection svg{
+font-size: 2rem;
+cursor: pointer;
+padding: 4px;
+}
+.UpperSection svg:hover{
+    background: #ddd;
+    border-radius: 50px;
+   }
+.MiddleSection{
+    padding-top: 10px;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.imgBox{
+    width: 100%;
+    margin: 0 auto;
+}
+.MiddleSection img{
+    padding-bottom: 40px;
+}
+.searchBar{
+    position: relative;
+    width: 600px;
+    height: 45px;
+    border-radius: 50px;
+    border:1px solid gainsboro;
+}
+.searchBar span{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: gainsboro;
+}
+.searchBar input{
+    width: 430px;
+    margin-left: -50px;
+    height: 43px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+}
+.searchBar:hover{
+    box-shadow: .0px 2px 4px rgba(0,0,0,0.1),0px -2px 4px rgba(0,0,0,0.1);
+}
+.searchBar> div{
+    list-style: none;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    display: flex;
+}
+.searchBar li svg{
+    padding-right: 15px;
+    font-size: 2rem;
+}
+.button{
+    padding-top: 20px;
+}
+.button button{
+    padding:10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+    margin-right: 10px;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.button button:hover{
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+.BottomSection{
+    bottom: 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+
+}
+.country{
+height: 50px;
+background:#f1f1f1;
+border-bottom: 1px solid rgb(200, 195, 195);
+margin-bottom: -18px;
+
+}
+.BottomSection label{
+    padding-left: 45px;
+    padding-top: 20px;
+    color:rgb(56, 56, 56);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.BottomSection ul{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin:0px;
+    padding: 0px;
+    font-size: .9rem;
+    background: #f1f1f1;
+    height: 50px;
+
+    
+}
+.BottomSection div{
+    display: flex;
+}
+.BottomSection div li{
+    list-style: none;
+    padding-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    cursor: pointer;
+}
+.BottomSection div li:first-child{
+    padding-left: 15px;
+}
+@media screen and (max-width:600px) {
+    .BottomSection{
+        display: none;
+    }
+    .HomePage{
+        /* justify-content: space-around; */
+    }
+    .MiddleSection{
+        position: absolute;
+        top: 100px;
+    }
+    .imgBox img{
+        height: 90px;
+    }
+    .searchBar{
+        width: 400px;
+    }
+    .searchBar input{
+        width: 200px;
+    }
+    
+}
